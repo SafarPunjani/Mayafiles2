@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products – Modern Anti-Tarnish Jewellery Collection | MAYA</title>
+<meta name="description" content="Explore MAYA's collection of 20+ modern anti-tarnish jewellery pieces — necklaces, earrings, rings and bracelets. Premium daily wear jewellery in Gujarat.">
+<link rel="canonical" href="https://mayajewellery.in/products.html">
+<meta property="og:title" content="Products – Modern Anti-Tarnish Jewellery Collection | MAYA">
+<meta property="og:description" content="Explore MAYA's collection of modern anti-tarnish jewellery — necklaces, earrings, rings and bracelets for daily wear.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+:root{--cream:#F4EBDD;--beige:#EFE3CF;--gold:#C6A45B;--burgundy:#6B0F1A;--charcoal:#1E1E1E;--gold-gradient:linear-gradient(135deg,#D4AF37,#C6A45B,#B8973D);--shadow:0 2px 20px rgba(0,0,0,0.08)}
+html{scroll-behavior:smooth}
+body{font-family:'Poppins',sans-serif;color:var(--charcoal);background:var(--cream);line-height:1.6;letter-spacing:0.02em;overflow-x:hidden}
+h1,h2,h3,h4,h5{font-family:'Playfair Display',serif;font-weight:600;line-height:1.3}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
+.container{max-width:1200px;margin:0 auto;padding:0 24px}
+.header{position:sticky;top:0;z-index:1000;background:var(--cream);box-shadow:var(--shadow);transition:padding 0.4s ease}
+.header.scrolled{padding:0}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1200px;margin:0 auto;transition:padding 0.4s ease}
+.header.scrolled .header-inner{padding:8px 24px}
+.logo-link{display:flex;align-items:center;gap:12px}
+.logo-img{width:55px;height:55px;border-radius:50%;object-fit:cover;box-shadow:0 2px 12px rgba(198,164,91,0.25);transition:transform 0.3s ease}
+.logo-img:hover{transform:scale(1.05)}
+.logo-text{font-family:'Playfair Display',serif;font-size:1.6rem;font-weight:700;color:var(--charcoal);letter-spacing:0.05em}
+.nav{display:flex;align-items:center;gap:32px}
+.nav a{font-family:'Poppins',sans-serif;font-size:0.92rem;font-weight:500;color:var(--charcoal);position:relative;padding:4px 0;transition:color 0.3s ease}
+.nav a::after{content:'';position:absolute;bottom:-2px;left:0;width:0;height:2px;background:var(--gold);transition:width 0.3s ease}
+.nav a:hover,.nav a.active{color:var(--gold)}
+.nav a:hover::after,.nav a.active::after{width:100%}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;background:none;border:none;z-index:1001}
+.hamburger span{width:24px;height:2px;background:var(--charcoal);transition:all 0.3s ease;display:block}
+.hamburger.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.active span:nth-child(2){opacity:0}
+.hamburger.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mobile-menu{display:none;position:fixed;top:0;left:0;width:100%;height:100vh;background:var(--cream);z-index:999;flex-direction:column;align-items:center;justify-content:center;gap:28px;opacity:0;transition:opacity 0.3s ease}
+.mobile-menu.active{display:flex;opacity:1}
+.mobile-menu a{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--charcoal);transition:color 0.3s ease}
+.mobile-menu a:hover,.mobile-menu a.active{color:var(--gold)}
+
+.page-hero{padding:80px 0 40px;text-align:center;background:linear-gradient(135deg,var(--cream),var(--beige))}
+.page-hero h1{font-size:2.8rem;margin-bottom:12px}
+.page-hero h1 span{color:var(--gold)}
+.page-hero .divider{width:60px;height:3px;background:var(--gold-gradient);margin:16px auto;border-radius:2px}
+.page-hero p{color:#666;max-width:560px;margin:0 auto;font-size:0.95rem}
+
+.filter-bar{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:32px 0;background:var(--cream)}
+.filter-btn{padding:10px 24px;border:2px solid var(--gold);background:transparent;color:var(--charcoal);font-family:'Poppins',sans-serif;font-size:0.85rem;font-weight:500;border-radius:50px;cursor:pointer;transition:all 0.3s ease}
+.filter-btn:hover,.filter-btn.active{background:var(--gold-gradient);color:#fff;border-color:transparent}
+
+.products-section{padding:20px 0 80px;background:var(--cream)}
+.category-title{font-size:1.8rem;margin:48px 0 24px;color:var(--charcoal);text-align:center}
+.category-title:first-child{margin-top:0}
+.products-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-bottom:40px}
+.product-card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 2px 12px rgba(0,0,0,0.04);transition:all 0.4s ease;display:flex;flex-direction:column}
+.product-card:hover{transform:translateY(-6px);box-shadow:0 12px 36px rgba(198,164,91,0.18)}
+.product-card img{width:100%;aspect-ratio:1/1;object-fit:cover;background:var(--beige);border-radius:20px 20px 0 0;display:block}
+.product-info{padding:20px}
+.product-info h3{font-size:1.05rem;margin-bottom:6px;color:var(--charcoal)}
+.product-price{font-family:'Playfair Display',serif;font-size:1.15rem;color:var(--gold);font-weight:600;margin-bottom:8px}
+.product-info p{font-size:0.82rem;color:#888;margin-bottom:16px;line-height:1.5}
+.btn-whatsapp{display:inline-flex;align-items:center;gap:8px;padding:10px 22px;background:#25D366;color:#fff;font-family:'Poppins',sans-serif;font-size:0.82rem;font-weight:500;border:none;border-radius:50px;cursor:pointer;transition:all 0.3s ease;box-shadow:0 2px 10px rgba(37,211,102,0.25)}
+.btn-whatsapp:hover{background:#1ebe5d;transform:translateY(-2px);box-shadow:0 4px 16px rgba(37,211,102,0.35)}
+.btn-whatsapp svg{width:16px;height:16px;fill:#fff}
+
+.cta-section{padding:80px 0;background:linear-gradient(135deg,var(--burgundy),#8B1A2B);text-align:center;color:#fff}
+.cta-section h2{font-size:2rem;margin-bottom:16px;color:#fff}
+.cta-section p{opacity:0.9;margin-bottom:28px;max-width:480px;margin-left:auto;margin-right:auto}
+.btn-white{display:inline-block;padding:14px 40px;background:#fff;color:var(--burgundy);font-family:'Poppins',sans-serif;font-size:0.95rem;font-weight:600;border:none;border-radius:50px;cursor:pointer;transition:all 0.4s ease;box-shadow:0 4px 18px rgba(0,0,0,0.2)}
+.btn-white:hover{background:var(--gold);color:#fff;transform:translateY(-2px)}
+
+.footer{background:var(--charcoal);color:#fff;padding:60px 0 0}
+.footer-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:48px;margin-bottom:48px}
+.footer-brand h3{font-family:'Playfair Display',serif;font-size:1.8rem;margin-bottom:8px;color:var(--gold)}
+.footer-brand .tagline{font-style:italic;color:rgba(255,255,255,0.7);margin-bottom:12px;font-size:0.95rem}
+.footer-brand .location{color:rgba(255,255,255,0.5);font-size:0.85rem}
+.footer h4{font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:20px;color:var(--gold)}
+.footer-links{list-style:none;display:flex;flex-direction:column;gap:10px}
+.footer-links a{color:rgba(255,255,255,0.7);font-size:0.9rem;transition:color 0.3s ease}
+.footer-links a:hover{color:var(--gold)}
+.footer-contact p{color:rgba(255,255,255,0.7);font-size:0.9rem;margin-bottom:8px}
+.footer-contact a{color:rgba(255,255,255,0.7);transition:color 0.3s ease}
+.footer-contact a:hover{color:var(--gold)}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding:20px 0;text-align:center;color:rgba(255,255,255,0.5);font-size:0.82rem}
+.footer-bottom a{color:var(--gold);transition:color 0.3s ease}
+.footer-bottom a:hover{color:#D4AF37}
+
+.whatsapp-float{position:fixed;bottom:24px;right:24px;z-index:900;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 20px rgba(37,211,102,0.4);transition:transform 0.3s ease;animation:waPulse 3s ease-in-out infinite;cursor:pointer}
+.whatsapp-float:hover{transform:scale(1.1)}
+.whatsapp-float svg{width:28px;height:28px;fill:#fff}
+@keyframes waPulse{0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)}50%{box-shadow:0 4px 30px rgba(37,211,102,0.6),0 0 0 8px rgba(37,211,102,0.1)}}
+
+.fade-in{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease}
+.fade-in.visible{opacity:1;transform:translateY(0)}
+
+@media(max-width:1023px){
+.products-grid{grid-template-columns:repeat(2,1fr)}
+.footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:767px){
+.nav{display:none}.hamburger{display:flex}
+.page-hero h1{font-size:1.9rem}
+.products-grid{grid-template-columns:1fr}
+.footer-grid{grid-template-columns:1fr}
+.whatsapp-float{bottom:20px;right:16px;width:50px;height:50px}
+.whatsapp-float svg{width:24px;height:24px}
+.filter-btn{padding:8px 18px;font-size:0.8rem}
+}
+</style>
+</head>
+<body>
+
+<header class="header" id="header">
+<div class="header-inner">
+<a href="index.html" class="logo-link">
+<img src="https://raw.githubusercontent.com/SafarPunjani/Maya/ccdf42091108838d8467346bf528d46880dd43e5/Gemini_Generated_Image_x73spqx73spqx73s.png" alt="MAYA Jewellery Logo" class="logo-img">
+<span class="logo-text">MAYA</span>
+</a>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="products.html" class="active">Products</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy</a>
+</nav>
+<button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</div>
+</header>
+<div class="mobile-menu" id="mobileMenu">
+<a href="index.html">Home</a>
+<a href="products.html" class="active">Products</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+<a href="privacy.html">Privacy</a>
+</div>
+
+<section class="page-hero">
+<div class="container">
+<h1><span>Modern Anti-Tarnish</span> Jewellery Collection</h1>
+<div class="divider"></div>
+<p>Browse our handpicked collection of premium anti-tarnish jewellery — designed for daily elegance and lasting beauty.</p>
+</div>
+</section>
+
+<div class="filter-bar">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="necklaces">Necklaces</button>
+<button class="filter-btn" data-filter="earrings">Earrings</button>
+<button class="filter-btn" data-filter="rings">Rings</button>
+<button class="filter-btn" data-filter="bracelets">Bracelets</button>
+</div>
+
+<section class="products-section">
+<div class="container">
+
+<!-- NECKLACES -->
+<div class="category-group" data-category="necklaces">
+<h2 class="category-title fade-in">Necklaces</h2>
+<div class="products-grid">
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=800&auto=format&fit=crop&q=80" alt="Aurelia Gold Layered Necklace - Anti-Tarnish Jewellery MAYA">
+<div class="product-info">
+<h3>Aurelia Gold Layered Necklace</h3>
+<p class="product-price">₹1,299</p>
+<p>Elegant multi-layered chain with delicate pendant detailing. Perfect for daily wear with anti-tarnish finish.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Aurelia%20Gold%20Layered%20Necklace" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1599643477877-530eb83abc8e?w=800&auto=format&fit=crop&q=80" alt="Seraphina Pendant Chain - Anti-Tarnish Necklace MAYA" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&auto=format&fit=crop&q=80';">
+<div class="product-info">
+<h3>Seraphina Pendant Chain</h3>
+<p class="product-price">₹999</p>
+<p>Minimalist single pendant on a fine chain. Ideal for office wear with a modern touch.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Seraphina%20Pendant%20Chain" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=800&auto=format&fit=crop&q=80" alt="Celeste Choker Necklace - Modern Jewellery MAYA">
+<div class="product-info">
+<h3>Celeste Choker Necklace</h3>
+<p class="product-price">₹1,499</p>
+<p>Statement choker design with intricate pattern work. Anti-tarnish coating for lasting shine.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Celeste%20Choker%20Necklace" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=800&auto=format&fit=crop&q=80" alt="Luna Pearl Chain Necklace - MAYA Jewellery">
+<div class="product-info">
+<h3>Luna Pearl Chain</h3>
+<p class="product-price">₹1,799</p>
+<p>Freshwater pearl accents on a gold-toned chain. Effortless elegance for any occasion.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Luna%20Pearl%20Chain" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=800&auto=format&fit=crop&q=80" alt="Isla Statement Necklace - MAYA Anti-Tarnish Jewellery">
+<div class="product-info">
+<h3>Isla Statement Necklace</h3>
+<p class="product-price">₹2,199</p>
+<p>Bold geometric design for evening occasions. Premium anti-tarnish finish with crystal detailing.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Isla%20Statement%20Necklace" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- EARRINGS -->
+<div class="category-group" data-category="earrings">
+<h2 class="category-title fade-in">Earrings</h2>
+<div class="products-grid">
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=800&auto=format&fit=crop&q=80" alt="Aria Drop Earrings - Anti-Tarnish Earrings MAYA">
+<div class="product-info">
+<h3>Aria Drop Earrings</h3>
+<p class="product-price">₹799</p>
+<p>Graceful teardrop design with polished gold finish. Lightweight and comfortable for all-day wear.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Aria%20Drop%20Earrings" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1630019852942-f89202989a59?w=800&auto=format&fit=crop&q=80" alt="Nova Stud Earrings - MAYA Jewellery">
+<div class="product-info">
+<h3>Nova Stud Earrings</h3>
+<p class="product-price">₹599</p>
+<p>Classic round stud design with sparkling stone centre. Perfect everyday companion for the modern woman.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Nova%20Stud%20Earrings" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?w=800&auto=format&fit=crop&q=80" alt="Lyra Hoop Earrings - Anti-Tarnish MAYA">
+<div class="product-info">
+<h3>Lyra Hoop Earrings</h3>
+<p class="product-price">₹899</p>
+<p>Medium-sized hoops with textured gold finish. Versatile style from day to night.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Lyra%20Hoop%20Earrings" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?w=800&auto=format&fit=crop&q=80" alt="Vera Chandelier Earrings - MAYA Jewellery">
+<div class="product-info">
+<h3>Vera Chandelier Earrings</h3>
+<p class="product-price">₹1,299</p>
+<p>Intricate chandelier design for festive occasions. Anti-tarnish coating ensures lasting brilliance.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Vera%20Chandelier%20Earrings" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?w=800&auto=format&fit=crop&q=80" alt="Zara Huggie Earrings - MAYA Jewellery">
+<div class="product-info">
+<h3>Zara Huggie Earrings</h3>
+<p class="product-price">₹699</p>
+<p>Sleek huggie hoops that sit close to the ear. Modern minimalist design for daily elegance.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Zara%20Huggie%20Earrings" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- RINGS -->
+<div class="category-group" data-category="rings">
+<h2 class="category-title fade-in">Rings</h2>
+<div class="products-grid">
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=800&auto=format&fit=crop&q=80" alt="Ember Solitaire Ring - Anti-Tarnish Ring MAYA">
+<div class="product-info">
+<h3>Ember Solitaire Ring</h3>
+<p class="product-price">₹899</p>
+<p>Classic solitaire setting with a sparkling centre stone. Timeless design with anti-tarnish protection.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Ember%20Solitaire%20Ring" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=800&auto=format&fit=crop&q=80" alt="Rosé Band Ring - MAYA Jewellery">
+<div class="product-info">
+<h3>Rosé Band Ring</h3>
+<p class="product-price">₹699</p>
+<p>Slim rose-gold toned band with subtle detailing. A refined daily wear essential.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Rose%20Band%20Ring" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=800&auto=format&fit=crop&q=80" alt="Orchid Cocktail Ring - MAYA Anti-Tarnish">
+<div class="product-info">
+<h3>Orchid Cocktail Ring</h3>
+<p class="product-price">₹1,199</p>
+<p>Statement cocktail ring with floral motif. Perfect for parties and special gatherings.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Orchid%20Cocktail%20Ring" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1543294001-f7cd5d7fb516?w=800&auto=format&fit=crop&q=80" alt="Ivy Stackable Ring - MAYA Jewellery">
+<div class="product-info">
+<h3>Ivy Stackable Ring</h3>
+<p class="product-price">₹499</p>
+<p>Thin stackable ring for mixing and layering. Build your own unique ring stack.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Ivy%20Stackable%20Ring" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1611955167811-4711904bb9f8?w=800&auto=format&fit=crop&q=80" alt="Pearl Dome Ring - MAYA Anti-Tarnish Jewellery">
+<div class="product-info">
+<h3>Pearl Dome Ring</h3>
+<p class="product-price">₹999</p>
+<p>Elegant dome ring topped with a lustrous pearl. A sophisticated piece for the refined woman.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Pearl%20Dome%20Ring" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+
+<!-- BRACELETS -->
+<div class="category-group" data-category="bracelets">
+<h2 class="category-title fade-in">Bracelets</h2>
+<div class="products-grid">
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=800&auto=format&fit=crop&q=80" alt="Aura Chain Bracelet - Anti-Tarnish MAYA">
+<div class="product-info">
+<h3>Aura Chain Bracelet</h3>
+<p class="product-price">₹999</p>
+<p>Delicate chain bracelet with adjustable clasp. Perfect anti-tarnish jewellery for daily wear.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Aura%20Chain%20Bracelet" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1611085583191-a3b181a88401?w=800&auto=format&fit=crop&q=80" alt="Elara Cuff Bracelet - MAYA Jewellery">
+<div class="product-info">
+<h3>Elara Cuff Bracelet</h3>
+<p class="product-price">₹1,399</p>
+<p>Open cuff design with sculpted edges. Bold yet elegant statement piece.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Elara%20Cuff%20Bracelet" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1602752250015-52934bc45613?w=800&auto=format&fit=crop&q=80" alt="Mira Bangle Set - MAYA Jewellery">
+<div class="product-info">
+<h3>Mira Bangle Set</h3>
+<p class="product-price">₹1,599</p>
+<p>Set of three textured bangles in varying widths. Stack together or wear individually.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Mira%20Bangle%20Set" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1576022162028-0f4aa5a59979?w=800&auto=format&fit=crop&q=80" alt="Naia Charm Bracelet - MAYA Anti-Tarnish">
+<div class="product-info">
+<h3>Naia Charm Bracelet</h3>
+<p class="product-price">₹1,099</p>
+<p>Charm bracelet with curated mini pendants. Each charm tells a unique story.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Naia%20Charm%20Bracelet" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+<div class="product-card fade-in">
+<img src="https://images.unsplash.com/photo-1609587312208-cea54be969e7?w=800&auto=format&fit=crop&q=80" alt="Diya Tennis Bracelet - MAYA Jewellery">
+<div class="product-info">
+<h3>Diya Tennis Bracelet</h3>
+<p class="product-price">₹1,899</p>
+<p>Sparkling tennis bracelet with precision-set stones. A luxurious accent for special moments.</p>
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20Diya%20Tennis%20Bracelet" target="_blank" class="btn-whatsapp"><svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>Enquire on WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<section class="cta-section">
+<div class="container fade-in">
+<h2>Love Something You See?</h2>
+<p>Get in touch with us directly to enquire about any piece, request custom designs, or visit our jewellery showroom.</p>
+<a href="contact.html" class="btn-white">Contact Us</a>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<h3>MAYA</h3>
+<p class="tagline">Crafted to Captivate</p>
+<p class="location">Jamnagar, Gujarat, India</p>
+</div>
+<div>
+<h4>Quick Links</h4>
+<ul class="footer-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="products.html">Products</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="privacy.html">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="footer-contact">
+<h4>Get in Touch</h4>
+<p style="display:flex;align-items:center;gap:10px;margin-bottom:10px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:18px;height:18px;fill:var(--gold);flex-shrink:0"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/></svg><span>Jamnagar, Gujarat, India</span></p>
+<p style="display:flex;align-items:center;gap:10px;margin-bottom:10px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:18px;height:18px;fill:var(--gold);flex-shrink:0"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg><a href="tel:+918780791426">+91 87807 91426</a></p>
+<p style="display:flex;align-items:center;gap:10px"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="width:18px;height:18px;fill:var(--gold);flex-shrink:0"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg><a href="mailto:punjanisayna@gmail.com">punjanisayna@gmail.com</a></p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 MAYA. All Rights Reserved. | Created & Designed by <a href="https://theonline.in" target="_blank" rel="noopener noreferrer">The Online</a></p>
+</div>
+</div>
+</footer>
+
+<a href="https://wa.me/918780791426?text=Hi%20I%20am%20interested%20in%20MAYA%20Jewellery" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 32 32"><path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.924 15.924 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.308 22.586c-.388 1.094-1.936 2.004-3.164 2.268-.84.178-1.936.32-5.628-1.21-4.72-1.956-7.76-6.74-7.998-7.052-.228-.312-1.908-2.54-1.908-4.846s1.21-3.44 1.638-3.912c.388-.428 1.024-.642 1.632-.642.198 0 .374.01.534.018.47.02.706.048 1.016.788.388.926 1.332 3.244 1.45 3.48.118.238.236.556.076.868-.148.32-.278.52-.516.796-.238.278-.462.49-.7.788-.218.258-.462.534-.198 1.024.264.478 1.174 1.936 2.52 3.136 1.732 1.544 3.192 2.024 3.644 2.244.348.168.762.136 1.04-.168.348-.388.78-.926 1.218-1.456.312-.38.708-.428 1.094-.268.39.148 2.694 1.272 3.156 1.502.462.232.77.346.886.538.116.192.116 1.114-.272 2.208z"/></svg>
+</a>
+
+<script>
+const FALLBACK_IMG='https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=800&auto=format&fit=crop&q=80';
+document.querySelectorAll('.product-card img').forEach(img=>{
+img.addEventListener('error',function(){this.onerror=null;this.src=FALLBACK_IMG;});
+});
+
+const header=document.getElementById('header');
+window.addEventListener('scroll',()=>{header.classList.toggle('scrolled',window.scrollY>50)});
+const hamburger=document.getElementById('hamburger'),mobileMenu=document.getElementById('mobileMenu');
+hamburger.addEventListener('click',()=>{hamburger.classList.toggle('active');mobileMenu.classList.toggle('active');document.body.style.overflow=mobileMenu.classList.contains('active')?'hidden':''});
+const fadeEls=document.querySelectorAll('.fade-in');
+const observer=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:0.15,rootMargin:'0px 0px -40px 0px'});
+fadeEls.forEach(el=>observer.observe(el));
+
+const filterBtns=document.querySelectorAll('.filter-btn');
+const categoryGroups=document.querySelectorAll('.category-group');
+filterBtns.forEach(btn=>{
+btn.addEventListener('click',()=>{
+filterBtns.forEach(b=>b.classList.remove('active'));
+btn.classList.add('active');
+const filter=btn.dataset.filter;
+categoryGroups.forEach(g=>{
+if(filter==='all'||g.dataset.category===filter){g.style.display='block'}
+else{g.style.display='none'}
+});
+});
+});
+</script>
+</body>
+</html>
